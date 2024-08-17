@@ -1,16 +1,18 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export default function PortalNavbar() {
-
+  const pathname = usePathname();
   return (
     <>
       <div className="border-b border-slate-200 bg-slate-100 ">
-        <div className="mx-auto grid w-full max-w-full grid-cols-4 gap-6 px-6 py-2 text-sm text-slate-500 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]">
+        <div className="mx-auto grid w-full max-w-full grid-cols-4 gap-6 px-6 py-2 text-sm text-indigo-900 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]">
           <div className="col-span-2 items-center md:col-span-4 lg:col-span-6">
             <a
               href="javascript:void(0)"
-              className="flex items-center gap-2 transition-colors duration-300 hover:text-emerald-500"
+              className="flex items-center gap-2 transition-colors duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +36,7 @@ export default function PortalNavbar() {
           <div className="col-span-2 items-center justify-end gap-6 md:col-span-4 lg:col-span-6">
             <div className="flex items-center justify-end gap-4">
               <a
-                href="javascript:void(0)"
+                href="/"
                 className="transition-colors duration-300 hover:text-emerald-500"
               >
                 <svg
@@ -116,7 +118,13 @@ export default function PortalNavbar() {
           className="flex cursor-pointer items-center whitespace-nowrap text-4xl font-black font-profilePlugFont"
         >
           <span className="mr-2 text-4xl text-indigo-500">
-            <Image src="/veeras-profile-plug.svg" width={0} height={0} className="w-12 h-12 md:w-24 md:h-24 scale-x-[-1]" alt="" />
+            <Image
+              src="/veeras-profile-plug.svg"
+              width={0}
+              height={0}
+              className="w-12 h-12 md:w-24 md:h-24 scale-x-[-1]"
+              alt=""
+            />
           </span>
           Veera`s
         </a>
@@ -146,11 +154,23 @@ export default function PortalNavbar() {
           className="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start"
         >
           <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
-            <li className="md:mr-12">
-              <a href="profile">Profile</a>
+            <li
+              className={`md:mr-12 ${
+                pathname === "/" ? "border-b-2 pt-2" : ""
+              } `}
+            >
+              <a href="/">Profile</a>
+            </li><li
+              className={`md:mr-12 ${
+                pathname === "/scoreboard" ? "border-b-2 pt-2" : ""
+              } `}
+            >
+              <a href="scoreboard">Scoreboard</a>
             </li>
             <li className="md:mr-12">
-              <a target="_blank" href="https://medium.com/@obulareddyveera">Blog</a>
+              <a target="_blank" href="https://medium.com/@obulareddyveera">
+                Blog
+              </a>
             </li>
           </ul>
         </nav>
