@@ -1,14 +1,12 @@
 import HomeDetailsCard from "./components/cards/HomeDetailsCard";
-import SkillsetCard from "./components/cards/SkillsetCard";
-import PortalNavbar from "./components/header/PortalNavbar";
+import EduAndSkillsCard from "./components/cards/EduAndSkillsCard";
 
 export default function Home() {
   return (
     <>
-      <PortalNavbar />
       <main className="flex flex-col">
         <HomeDetailsCard />
-        <SkillsetCard />
+        <EduAndSkillsCard />
       </main>
     </>
   );

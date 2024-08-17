@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-export default function SkillsetCard() {
+export default function EduAndSkillsCard() {
   return (
     <div className="relative mt-4 bg-emerald-500">
       <div className="flex flex-col items-center">
