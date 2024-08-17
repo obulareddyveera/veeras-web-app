@@ -113,7 +113,7 @@ export default function HomeNavbar() {
                 className="relative inline-flex h-10 w-10 items-center justify-center rounded-full text-white"
               >
                 <Image
-                  src="/veera.jpg"
+                  src="/veera_profile.jpg"
                   alt="user name"
                   title="user name"
                   width="40"
