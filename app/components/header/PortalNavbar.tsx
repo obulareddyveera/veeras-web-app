@@ -11,7 +11,7 @@ export default function PortalNavbar() {
         <div className="mx-auto grid w-full max-w-full grid-cols-4 gap-6 px-6 py-2 text-sm text-indigo-900 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]">
           <div className="col-span-2 items-center md:col-span-4 lg:col-span-6">
             <a
-              href="javascript:void(0)"
+              href="/"
               className="flex items-center gap-2 transition-colors duration-300"
             >
               <svg
@@ -37,7 +37,7 @@ export default function PortalNavbar() {
             <div className="flex items-center justify-end gap-4">
               <a
                 href="/"
-                className="transition-colors duration-300 hover:text-emerald-500"
+                className="transition-colors duration-300 hover:text-indigo-500"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +61,8 @@ export default function PortalNavbar() {
                 </svg>
               </a>
               <a
-                href="javascript:void(0)"
-                className="transition-colors duration-300 hover:text-emerald-500"
+                href="/"
+                className="transition-colors duration-300 hover:text-indigo-500"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +84,8 @@ export default function PortalNavbar() {
                 </svg>
               </a>
               <a
-                href="javascript:void(0)"
-                className="transition-colors duration-300 hover:text-emerald-500"
+                href="/"
+                className="transition-colors duration-300 hover:text-indigo-500"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function PortalNavbar() {
       </div>
       <header className="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-indigo-900 md:mx-auto md:flex-row md:items-center">
         <a
-          href="#"
+          href="/"
           className="flex cursor-pointer items-center whitespace-nowrap text-4xl font-black font-profilePlugFont"
         >
           <span className="mr-2 text-4xl text-indigo-500">
@@ -140,11 +140,11 @@ export default function PortalNavbar() {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
@@ -156,13 +156,13 @@ export default function PortalNavbar() {
           <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
             <li
               className={`md:mr-12 ${
-                pathname === "/" ? "border-b-2 pt-2" : ""
+                pathname === "/" ? "border-b-2 pt-2 border-indigo-600" : ""
               } `}
             >
               <a href="/">Profile</a>
             </li><li
               className={`md:mr-12 ${
-                pathname === "/scoreboard" ? "border-b-2 pt-2" : ""
+                pathname === "/scoreboard" ? "border-b-2 pt-2 border-indigo-600" : ""
               } `}
             >
               <a href="scoreboard">Scoreboard</a>
