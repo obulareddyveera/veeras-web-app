@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import PortalNavbar from "./components/header/PortalNavbar";
 import PortalFooterCard from "./components/cards/PortalFooterCard";
+import Providers from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PortalNavbar />
-            {children}
-        <PortalFooterCard />
+        <Providers>
+          <PortalNavbar />
+          {children}
+          <PortalFooterCard />
+        </Providers>
       </body>
     </html>
   );

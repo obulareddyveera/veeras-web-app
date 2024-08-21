@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import { usePathname } from "next/navigation";
@@ -160,12 +160,15 @@ export default function PortalNavbar() {
               } `}
             >
               <a href="/">Profile</a>
-            </li><li
-              className={`md:mr-12 ${
-                pathname === "/scoreboard" ? "border-b-2 pt-2 border-indigo-600" : ""
+            </li>
+            <li
+              className={`md:mr-12 text-amber-600 ${
+                pathname === "/js-q-bank"
+                  ? "border-b-2 pt-2 border-amber-500 "
+                  : ""
               } `}
             >
-              <a href="scoreboard">Scoreboard</a>
+              <a href="js-q-bank">JS Q-Bank</a>
             </li>
             <li className="md:mr-12">
               <a target="_blank" href="https://medium.com/@obulareddyveera">
