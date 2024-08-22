@@ -8,10 +8,11 @@ export default function StoreProvider({Children}: {Children: React.ReactNode}) {
     if (!storeRef.current) {
         storeRef.current = makeStore()
     }
-    console.log("--== I am getting called automatically dude !! ==--")
     return (
         <>
-            <Provider store={storeRef.current}>{Children}</Provider>
+            <Provider store={storeRef.current}>
+                {Children}
+            </Provider>
         </>
     )
 }
