@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.2",
+    "@picovoice/leopard-react": "^2.0.2",
+    "@picovoice/porcupine-web": "^3.0.3",
+    "@picovoice/rhino-web": "^3.0.3",
+    "@picovoice/web-voice-processor": "^4.0.9",
     "@reduxjs/toolkit": "^2.2.7",
     "formik": "^2.4.6",
     "next": "14.2.5",
