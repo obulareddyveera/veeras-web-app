@@ -18,7 +18,7 @@ export default function ScoreboardAppCard() {
       <div className="flex justify-center p-4 mb-4 gap-2">
         <a
           href="scoreboard"
-          className="relative rounded-lg bg-emerald-500 px-6 py-2 font-medium text-white shadow transition hover:bg-emerald-400"
+          className="relative rounded-lg bg- px-6 py-2 font-medium text-white bg-emerald-500 shadow transition hover:bg-emerald-400"
         >
           <div className="-scale-x-100 absolute right-0 -bottom-10 h-10 w-10 -rotate-12 md:inline-flex text-emerald-500 ">
             <svg

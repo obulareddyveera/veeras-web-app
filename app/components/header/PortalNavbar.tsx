@@ -163,12 +163,12 @@ export default function PortalNavbar() {
             </li>
             <li
               className={`md:mr-12 text-amber-600 ${
-                pathname === "/js-q-bank"
+                pathname === "/talent-bolt"
                   ? "border-b-2 pt-2 border-amber-500 "
                   : ""
               } `}
             >
-              <a href="js-q-bank">JS Q-Bank</a>
+              <a href="talent-bolt">The Hiring Plug</a>
             </li>
             <li className="md:mr-12">
               <a target="_blank" href="https://medium.com/@obulareddyveera">
